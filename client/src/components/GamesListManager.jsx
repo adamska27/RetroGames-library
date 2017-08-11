@@ -21,7 +21,7 @@ export default class GamesListManager extends PureComponent {
               .map( (game, index) => {
                 return(
                   <Game {...game}
-                    key={game.id}
+                    key={index}
                     i={index}
                     toggleModal={toggleModal}
                     deleteGame={deleteGame}
